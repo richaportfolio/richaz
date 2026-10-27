@@ -1,0 +1,90 @@
+/* Richa Singh resume website styles */
+:root {
+  --navy: #12233f;
+  --blue: #2459a9;
+  --teal: #2aa198;
+  --ink: #263246;
+  --muted: #667085;
+  --paper: #ffffff;
+  --background: #eef2f7;
+  --line: #dce3ed;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { margin: 0; background: var(--background); color: var(--ink); font-family: "Segoe UI", Arial, sans-serif; line-height: 1.65; }
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { width: min(1100px, calc(100% - 36px)); margin: 0 auto; }
+.site-header { position: sticky; top: 0; z-index: 10; background: rgba(18,35,63,.98); color: white; box-shadow: 0 3px 14px #13233d22; }
+.nav { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.brand { font-weight: 800; font-size: 1.05rem; letter-spacing: .3px; white-space: nowrap; }
+.nav-links { display: flex; gap: 18px; align-items: center; }
+.nav-links a { color: #eaf0fa; font-size: .92rem; }
+.button { border: 0; border-radius: 8px; padding: 10px 14px; background: var(--teal); color: #082b32; font-weight: 800; cursor: pointer; }
+.button:hover { filter: brightness(1.07); }
+.button-small { padding: 9px 12px; }
+.menu-toggle { display: none; background: transparent; color: white; border: 1px solid #7184a1; border-radius: 7px; padding: 6px 10px; font-size: 1.2rem; cursor: pointer; }
+.hero { margin-top: 28px; padding: 38px; border-radius: 18px; background: linear-gradient(125deg, var(--navy), #244e82); color: white; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; box-shadow: 0 12px 32px #152b4b1a; }
+.eyebrow { color: #8ce1d7; font-size: .78rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin: 0; }
+.hero h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.12; margin: 8px 0; }
+.hero h2 { color: #f3f7fc; font-size: 1.08rem; font-weight: 650; margin: 0; }
+.qualifications { color: #b8c9e2; font-weight: 650; margin: 10px 0; }
+.contact-list { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 20px; font-size: .93rem; }
+.avatar { width: 126px; height: 126px; display: grid; place-items: center; border: 2px solid #8ce1d7; border-radius: 50%; background: #ffffff15; font-size: 2.5rem; font-weight: 800; }
+.content-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(260px, .85fr); gap: 22px; margin-top: 22px; align-items: start; }
+.panel { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 24px; margin-bottom: 20px; box-shadow: 0 5px 18px #12233f08; }
+.section-title { display: flex; align-items: center; gap: 10px; color: var(--navy); font-size: 1.08rem; letter-spacing: .5px; text-transform: uppercase; margin: 0 0 16px; }
+.section-title::before { content: ""; display: inline-block; width: 5px; height: 22px; background: var(--teal); border-radius: 4px; flex: 0 0 auto; }
+h3 { margin: 0 0 5px; color: var(--navy); font-size: 1rem; }
+p { margin-top: 0; }
+.muted, .small-note { color: var(--muted); font-size: .9rem; }
+.timeline-item { padding-bottom: 16px; margin-bottom: 16px; border-bottom: 1px solid #edf0f5; break-inside: avoid; }
+.timeline-item:last-child { padding: 0; margin: 0; border: 0; }
+.date { color: var(--blue); font-weight: 800; font-size: .85rem; }
+.timeline-item p { margin: 0; }
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.stat { text-align: center; background: #f1f6fc; border-radius: 11px; padding: 16px 10px; }
+.stat strong { display: block; color: var(--blue); font-size: 1.8rem; line-height: 1.2; }
+.stat span { color: var(--muted); font-size: .8rem; font-weight: 750; }
+.small-note { margin: 12px 0 0; }
+.tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 7px 0 17px; }
+.tags span { border: 1px solid #d9e6f5; border-radius: 999px; background: #edf4fb; color: #244b7d; padding: 5px 9px; font-size: .81rem; font-weight: 650; }
+.sidebar ul { margin: 0; padding-left: 19px; }
+.sidebar li { margin-bottom: 8px; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .88rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+th { background: #f4f7fb; color: var(--navy); }
+tbody tr:last-child td { border-bottom: 0; }
+.signature { text-align: right; color: var(--navy); font-weight: 800; margin: 16px 0 0; }
+.footer { text-align: center; color: var(--muted); font-size: .82rem; padding: 8px 0 26px; }
+@media (max-width: 800px) {
+  .nav { flex-wrap: wrap; padding: 12px 0; }
+  .menu-toggle { display: inline-block; margin-left: auto; }
+  .nav-links { display: none; order: 4; flex-basis: 100%; flex-direction: column; align-items: flex-start; padding: 8px 0; }
+  .nav-links.open { display: flex; }
+  .print-button { order: 3; }
+  .hero { padding: 27px; grid-template-columns: 1fr; }
+  .avatar { width: 82px; height: 82px; font-size: 1.7rem; grid-row: 1; }
+  .content-grid { grid-template-columns: 1fr; gap: 0; }
+}
+@media (max-width: 480px) {
+  .container { width: min(100% - 24px, 1100px); }
+  .hero { margin-top: 14px; padding: 22px; }
+  .hero h2 { font-size: .98rem; }
+  .contact-list { flex-direction: column; gap: 5px; }
+  .panel { padding: 18px; }
+  .print-button { font-size: .8rem; }
+}
+@media print {
+  @page { size: A4; margin: 12mm; }
+  body { background: white; font-size: 9.5pt; }
+  .site-header, .menu-toggle, .print-button { display: none !important; }
+  .container { width: 100%; }
+  .hero { margin-top: 0; padding: 20px; border-radius: 0; box-shadow: none; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .content-grid { gap: 12px; margin-top: 12px; }
+  .panel { box-shadow: none; padding: 14px; margin-bottom: 12px; break-inside: avoid; }
+  .timeline-item { break-inside: avoid; }
+  a { text-decoration: none; }
+  .footer { display: none; }
+}
