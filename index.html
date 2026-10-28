@@ -1,454 +1,414 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Resume of Richa Singh, Assistant Professor in Computer Science, AI and Data Science.">
-
-    <title>Richa Singh | Academic Resume</title>
-
+    <meta name="description" content="Richa Singh's academic CV, technical skills, research interests and machine learning projects.">
+    <title>Richa Singh | Academic CV & Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
 
-<header class="site-header">
+<header class="site-header" id="home">
     <nav class="nav container" aria-label="Main navigation">
-
         <a class="brand" href="#home">Richa Singh</a>
 
-        <button class="menu-toggle"
-                id="menuToggle"
-                aria-label="Toggle navigation"
-                aria-expanded="false">
+        <button class="menu-toggle" id="menuToggle"
+                type="button" aria-label="Open navigation menu"
+                aria-controls="navLinks" aria-expanded="false">
             ☰
         </button>
 
         <div class="nav-links" id="navLinks">
-            <a href="#summary">Summary</a>
+            <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
+            <a href="#contact">Contact</a>
         </div>
-
-        <button class="button print-button" onclick="window.print()">
-            Print / Save PDF
-        </button>
-
     </nav>
 </header>
 
+<main class="container">
 
-<main class="container" id="home">
-
-    <!-- PROFILE SECTION -->
-
-    <section class="hero">
-
+    <!-- PROFILE -->
+    <section class="hero" aria-labelledby="profile-name">
         <div class="hero-copy">
-
-            <p class="eyebrow">
-                Professor in Artificial Intelligence And Data Science 
-            </p>
-
-            <h1>Richa Singh</h1>
-
-            <h2>
-                Assistant Professor |
-                Computer Science |
-                AI &amp; Data Science
-            </h2>
-
-            <p class="qualifications">
-                M.Tech. · B.Tech. · NET · HTET · B.Ed.
-            </p>
+            <p class="eyebrow">Academic Profile &amp; Portfolio</p>
+            <h1 id="profile-name">Richa Singh</h1>
+            <h2>Assistant Professor | Computer Science | AI &amp; Data Science</h2>
+            <p class="qualifications">M.Tech. · B.Tech. · B.Ed. · NET · HTET</p>
 
             <div class="contact-list">
-
-                <a href="mailto:Richa.mtech03@gmail.com">
-                    ✉ Richa.mtech03@gmail.com
-                </a>
-
-                <a href="tel:+918708493537">
-                    ☎ 8708493537
-                </a>
-
-                <a href="tel:+919416267750">
-                    ☎ 9416267750
-                </a>
-
-                <span>⌖ Karnal, Haryana, India</span>
-
+                <span>Email:
+                    <a href="mailto:Richa.mtech03@gmail.com">Richa.mtech03@gmail.com</a>
+                </span>
+                <span>Phone:
+                    <a href="tel:+918708493537">8708493537</a>
+                    · <a href="tel:+919416267750">9416267750</a>
+                </span>
+                <span>Location: Karnal, Haryana, India</span>
             </div>
 
+            <div class="hero-actions">
+                <button class="button" id="printResume" type="button">
+                    Print / Save as PDF
+                </button>
+                <a class="button button-outline" href="#projects">
+                    View Projects
+                </a>
+            </div>
         </div>
 
-        <!-- PROFILE PHOTO -->
-
-        <div class="profile-photo">
-            <img src="richa.jpeg" alt="Professional photograph of Richa Singh">
+        <div class="profile-mark" aria-label="Richa Singh initials">
+            RS
         </div>
-
     </section>
 
-
-    <div class="content-grid">
-
-        <!-- PRIMARY COLUMN -->
-
-        <div class="primary-column">
-
-            <!-- PROFESSIONAL SUMMARY -->
-
-            <section class="panel" id="summary">
-
-                <h2 class="section-title">
-                    Professional Summary
-                </h2>
-
-                <p>
-                    Motivated and dedicated Computer Science educator
-                    with extensive teaching experience in Computer
-                    Science and Artificial Intelligence &amp; Data Science.
-                    Passionate about creating an engaging learning
-                    environment that encourages academic excellence,
-                    problem solving, programming skills and lifelong learning.
-                </p>
-
-                <p>
-                    Teaching interests include Python, data science,
-                    statistics, machine learning, data analytics,
-                    web technologies, cloud computing, blockchain,
-                    cyber security and data structures.
-                </p>
-
-            </section>
-
-
-            <!-- PROFESSIONAL EXPERIENCE -->
-
-            <section class="panel" id="experience">
-
-                <h2 class="section-title">
-                    Professional Experience
-                </h2>
-
-                <article class="timeline-item">
-                    <span class="date">Aug 2025 – Present</span>
-                    <h3>
-                        Assistant Professor – Artificial Intelligence
-                        &amp; Data Science (CSE-AIDS)
-                    </h3>
-                    <p class="muted">
-                        Panipat Institute of Engineering and Technology
-                    </p>
-                </article>
-
-                <article class="timeline-item">
-                    <span class="date">Oct 2021 – Aug 2025</span>
-                    <h3>
-                        Assistant Professor – Computer Science (CSE)
-                    </h3>
-                    <p class="muted">
-                        Dyal Singh College, Karnal
-                    </p>
-                </article>
-
-                <article class="timeline-item">
-                    <span class="date">2016 – 2021</span>
-                    <h3>
-                        Assistant Professor – Computer Science (CSE)
-                    </h3>
-                    <p class="muted">
-                        RPIIT Engineering College, Karnal
-                    </p>
-                </article>
-
-                <article class="timeline-item">
-                    <span class="date">2008 – 2009</span>
-                    <h3>
-                        Assistant Professor – Computer Science (CSE)
-                    </h3>
-                    <p class="muted">
-                        Maharishi Markandeshwar University
-                    </p>
-                </article>
-
-                <article class="timeline-item">
-                    <span class="date">2007 – 2008</span>
-                    <h3>
-                        Assistant Professor – Computer Science (CSE)
-                    </h3>
-                    <p class="muted">
-                        Doon Valley Engineering College
-                    </p>
-                </article>
-
-            </section>
-
-
-            <!-- EDUCATION -->
-
-            <section class="panel" id="education">
-
-                <h2 class="section-title">
-                    Education &amp; Qualifications
-                </h2>
-
-                <div class="table-wrap">
-
-                    <table>
-
-                        <thead>
-                            <tr>
-                                <th>Qualification</th>
-                                <th>Institution / University</th>
-                                <th>Result</th>
-                                <th>Year</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-
-                            <tr>
-                                <td>B.Ed.</td>
-                                <td>Buddha College of Arts, Indri, Karnal</td>
-                                <td>68%</td>
-                                <td>2026</td>
-                            </tr>
-
-                            <tr>
-                                <td>M.Tech. in Computer Science</td>
-                                <td>Guru Jambheshwar University, Hisar</td>
-                                <td>61%</td>
-                                <td>2006</td>
-                            </tr>
-
-                            <tr>
-                                <td>B.Tech. in Computer Science</td>
-                                <td>Maharishi Markandeshwar University, Mullana</td>
-                                <td>67%</td>
-                                <td>2004</td>
-                            </tr>
-
-                            <tr>
-                                <td>12th</td>
-                                <td>DAV Public School, Ambala</td>
-                                <td>76%</td>
-                                <td>2000</td>
-                            </tr>
-
-                            <tr>
-                                <td>10th</td>
-                                <td>DAV Public School, Ambala</td>
-                                <td>88%</td>
-                                <td>1998</td>
-                            </tr>
-
-                            <tr>
-                                <td>National Eligibility Test (NET)</td>
-                                <td>National Testing Agency (NTA)</td>
-                                <td>Qualified</td>
-                                <td>2019</td>
-                            </tr>
-
-                            <tr>
-                                <td>Haryana Teacher Eligibility Test (HTET)</td>
-                                <td>Bhiwani Board</td>
-                                <td>Qualified</td>
-                                <td>2020</td>
-                            </tr>
-
-                        </tbody>
-
-                    </table>
-
-                </div>
-
-            </section>
-
+    <!-- HIGHLIGHTS -->
+    <section class="stats" aria-label="Professional highlights">
+        <div class="stat">
+            <strong>AI &amp; ML</strong>
+            <span>Technical Interests</span>
         </div>
+        <div class="stat">
+            <strong>9</strong>
+            <span>Research Papers</span>
+        </div>
+        <div class="stat">
+            <strong>5</strong>
+            <span>Patents</span>
+        </div>
+    </section>
 
+    <!-- ABOUT -->
+    <section class="panel" id="about">
+        <h2 class="section-title">Professional Summary</h2>
+        <p>
+            Dedicated Computer Science educator with experience in teaching
+            Computer Science and Artificial Intelligence &amp; Data Science.
+            Interested in academic excellence, programming, analytical
+            problem-solving and practical technology education.
+        </p>
+        <p>
+            Teaching and technical interests include Python programming,
+            data science, statistics, machine learning, data analytics,
+            web technologies, cloud computing, blockchain and cyber security.
+        </p>
+    </section>
 
-        <!-- SIDEBAR -->
+    <!-- EXPERIENCE -->
+    <section class="panel" id="experience">
+        <h2 class="section-title">Professional Experience</h2>
 
-        <aside class="sidebar">
+        <article class="timeline-item">
+            <span class="date">July 2025 – Present</span>
+            <h3>Assistant Professor – CSE (AI &amp; Data Science)</h3>
+            <p class="muted">Panipat Institute of Engineering and Technology</p>
+        </article>
 
-            <!-- RESEARCH -->
+        <article class="timeline-item">
+            <span class="date">October 2021 – August 2025</span>
+            <h3>Assistant Professor – Computer Science</h3>
+            <p class="muted">Dyal Singh College, Karnal</p>
+        </article>
 
-            <section class="panel">
+        <article class="timeline-item">
+            <span class="date">2016 – 2021</span>
+            <h3>Assistant Professor – Computer Science</h3>
+            <p class="muted">RPIIT Engineering College, Karnal</p>
+        </article>
 
-                <h2 class="section-title">
-                    Research &amp; Innovation
-                </h2>
+        <article class="timeline-item">
+            <span class="date">2008 – 2009</span>
+            <h3>Assistant Professor – Computer Science</h3>
+            <p class="muted">Maharishi Markandeshwar University</p>
+        </article>
 
-                <div class="stats">
+        <article class="timeline-item">
+            <span class="date">2007 – 2008</span>
+            <h3>Assistant Professor – Computer Science</h3>
+            <p class="muted">Doon Valley Engineering College</p>
+        </article>
+    </section>
 
-                    <div class="stat">
-                        <strong>9</strong>
-                        <span>Research Papers</span>
-                    </div>
+    <!-- EDUCATION -->
+    <section class="panel" id="education">
+        <h2 class="section-title">Education &amp; Qualifications</h2>
 
-                    <div class="stat">
-                        <strong>5</strong>
-                        <span>Patents</span>
-                    </div>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Institution / University</th>
+                        <th>Result</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Ed.</td>
+                        <td>Buddha College of Arts, Indri, Karnal</td>
+                        <td>68%</td>
+                        <td>2026</td>
+                    </tr>
+                    <tr>
+                        <td>M.Tech. in Computer Science</td>
+                        <td>Guru Jambheshwar University, Hisar</td>
+                        <td>61%</td>
+                        <td>2006</td>
+                    </tr>
+                    <tr>
+                        <td>B.Tech. in Computer Science</td>
+                        <td>Maharishi Markandeshwar University, Mullana</td>
+                        <td>67%</td>
+                        <td>2004</td>
+                    </tr>
+                    <tr>
+                        <td>12th</td>
+                        <td>DAV Public School, Ambala</td>
+                        <td>76%</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>10th</td>
+                        <td>DAV Public School, Ambala</td>
+                        <td>88%</td>
+                        <td>1998</td>
+                    </tr>
+                    <tr>
+                        <td>NET</td>
+                        <td>National Testing Agency (NTA)</td>
+                        <td>Qualified</td>
+                        <td>2019</td>
+                    </tr>
+                    <tr>
+                        <td>HTET</td>
+                        <td>Bhiwani Board</td>
+                        <td>Qualified</td>
+                        <td>2020</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-                </div>
+    <!-- SKILLS -->
+    <section class="panel" id="skills">
+        <h2 class="section-title">Technical Skills</h2>
 
-                <p class="small-note">
-                    Counts as listed in the supplied CV.
-                </p>
-
-            </section>
-
-
-            <!-- TECHNICAL SKILLS -->
-
-            <section class="panel" id="skills">
-
-                <h2 class="section-title">
-                    Technical Skills
-                </h2>
-
+        <div class="skill-grid">
+            <div class="skill-card">
                 <h3>Programming</h3>
-
                 <div class="tags">
-                    <span>Python</span>
-                    <span>C</span>
-                    <span>C++</span>
-                    <span>Java</span>
-                    <span>Kotlin</span>
-                    <span>R</span>
+                    <span>Python</span><span>C</span><span>C++</span>
+                    <span>Java</span><span>Kotlin</span><span>R</span>
                 </div>
+            </div>
 
-                <h3>Data Science &amp; Analytics</h3>
-
+            <div class="skill-card">
+                <h3>Data Science &amp; Machine Learning</h3>
                 <div class="tags">
-                    <span>Data Analytics</span>
-                    <span>Statistics</span>
-                    <span>Machine Learning</span>
-                    <span>Data Science with Excel</span>
+                    <span>Machine Learning</span><span>Statistics</span>
+                    <span>Data Science</span><span>Data Analytics</span>
                 </div>
+            </div>
 
+            <div class="skill-card">
                 <h3>Web Technologies</h3>
-
                 <div class="tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>VBScript</span>
-                    <span>ASP</span>
-                    <span>XML</span>
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    <span>XML</span><span>ASP</span>
                 </div>
+            </div>
 
+            <div class="skill-card">
+                <h3>Visualization &amp; BI</h3>
+                <div class="tags">
+                    <span>Power BI</span><span>Tableau</span><span>Excel</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
                 <h3>Tools &amp; Platforms</h3>
-
                 <div class="tags">
-                    <span>Jupyter Notebook</span>
-                    <span>Anaconda</span>
-                    <span>VS Code</span>
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>Power BI</span>
-                    <span>Tableau</span>
+                    <span>Jupyter Notebook</span><span>Anaconda</span>
+                    <span>VS Code</span><span>Git</span><span>GitHub</span>
                 </div>
+            </div>
 
-                <h3>Other Areas</h3>
-
+            <div class="skill-card">
+                <h3>Databases &amp; Other Areas</h3>
                 <div class="tags">
-                    <span>Data Structures</span>
-                    <span>SQL</span>
-                    <span>MySQL Workbench</span>
-                    <span>Linux (Ubuntu)</span>
-                    <span>Cloud Computing</span>
-                    <span>Blockchain</span>
+                    <span>SQL</span><span>MySQL</span><span>Linux</span>
+                    <span>Cloud Computing</span><span>Blockchain</span>
                     <span>Cyber Security</span>
                 </div>
-
-            </section>
-
-
-            <!-- CORE STRENGTHS -->
-
-            <section class="panel">
-
-                <h2 class="section-title">
-                    Core Strengths
-                </h2>
-
-                <ul>
-                    <li>
-                        Strong command of English, including vocabulary,
-                        grammar, speaking and writing.
-                    </li>
-
-                    <li>
-                        Programming-oriented teaching focused on logical
-                        and mathematical problem solving.
-                    </li>
-
-                    <li>
-                        Interest and capability in statistics,
-                        mathematics, data science and programming.
-                    </li>
-
-                    <li>
-                        Ability to learn and apply new programming
-                        languages and technologies.
-                    </li>
-                </ul>
-
-            </section>
-
-
-            <!-- INTERESTS -->
-
-            <section class="panel">
-
-                <h2 class="section-title">
-                    Interests
-                </h2>
-
-                <p>
-                    Complex mathematical and statistical problems;
-                    learning new programming languages; content writing
-                    and vocabulary enhancement; web designing; statistics,
-                    mathematics and data science; composing and singing
-                    songs; dance-related creative activities; creating
-                    Sudoku puzzles.
-                </p>
-
-            </section>
-
-        </aside>
-
-    </div>
-
-
-    <!-- DECLARATION -->
-
-    <section class="panel declaration">
-
-        <h2 class="section-title">
-            Declaration
-        </h2>
-
-        <p>
-            <em>
-                I declare that the information provided above is true
-                to the best of my knowledge and belief.
-            </em>
-        </p>
-
-        <p class="signature">Richa Singh</p>
-
+            </div>
+        </div>
     </section>
 
+    <!-- PROJECTS -->
+    <section class="panel projects-section" id="projects">
+        <h2 class="section-title">Machine Learning Projects</h2>
+        <p class="projects-intro">
+            Selected projects in predictive analytics, classification,
+            natural language processing and customer analytics.
+        </p>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <div class="project-number">01</div>
+                <h3>House Price Prediction</h3>
+                <p>
+                    Predict house prices using property-related features
+                    and machine learning regression techniques.
+                </p>
+                <div class="project-tags">
+                    <span>Python</span><span>Machine Learning</span>
+                    <span>Regression</span>
+                </div>
+                <a class="project-link"
+                   href="https://github.com/richamtech/project-1-"
+                   target="_blank" rel="noopener noreferrer">
+                    View on GitHub <span aria-hidden="true">↗</span>
+                </a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-number">02</div>
+                <h3>Student Performance Prediction</h3>
+                <p>
+                    Analyze student-related data and predict academic
+                    performance using machine learning techniques.
+                </p>
+                <div class="project-tags">
+                    <span>Python</span><span>Prediction</span>
+                    <span>Machine Learning</span>
+                </div>
+                <a class="project-link"
+                   href="https://github.com/richamtech/project-2-"
+                   target="_blank" rel="noopener noreferrer">
+                    View on GitHub <span aria-hidden="true">↗</span>
+                </a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-number">03</div>
+                <h3>Spam Detection</h3>
+                <p>
+                    Classify messages as spam or legitimate using text
+                    processing and machine learning.
+                </p>
+                <div class="project-tags">
+                    <span>Python</span><span>NLP</span>
+                    <span>Classification</span>
+                </div>
+                <a class="project-link"
+                   href="https://github.com/richamtech/project-3-"
+                   target="_blank" rel="noopener noreferrer">
+                    View on GitHub <span aria-hidden="true">↗</span>
+                </a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-number">04</div>
+                <h3>Customer Segmentation</h3>
+                <p>
+                    Group customers by shared characteristics to discover
+                    customer patterns and support data-driven decisions.
+                </p>
+                <div class="project-tags">
+                    <span>Python</span><span>Clustering</span>
+                    <span>Data Science</span>
+                </div>
+                <a class="project-link"
+                   href="https://github.com/richamtech/project-4-"
+                   target="_blank" rel="noopener noreferrer">
+                    View on GitHub <span aria-hidden="true">↗</span>
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="panel" id="research">
+        <h2 class="section-title">Research &amp; Innovation</h2>
+
+        <div class="research-grid">
+            <div class="research-card">
+                <strong>9</strong>
+                <span>Research papers</span>
+            </div>
+            <div class="research-card">
+                <strong>5</strong>
+                <span>Patents</span>
+            </div>
+        </div>
+
+        <p class="small-note">
+            Add individual publication titles, patent details, publication
+            venues and links to showcase your research work.
+        </p>
+    </section>
+
+    <!-- STRENGTHS -->
+    <section class="panel" id="strengths">
+        <h2 class="section-title">Core Strengths</h2>
+        <ul class="strength-list">
+            <li>Programming-oriented teaching and problem solving.</li>
+            <li>Interest in mathematics, statistics and data science.</li>
+            <li>Ability to learn and apply new technologies.</li>
+            <li>Strong interest in academic writing and technical education.</li>
+        </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="panel" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <strong>Email</strong>
+                <a href="mailto:Richa.mtech03@gmail.com">
+                    Richa.mtech03@gmail.com
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <strong>Phone</strong>
+                <a href="tel:+918708493537">8708493537</a>
+                · <a href="tel:+919416267750">9416267750</a>
+            </div>
+
+            <div class="contact-card">
+                <strong>Location</strong>
+                Karnal, Haryana, India
+            </div>
+
+            <div class="contact-card">
+                <strong>GitHub Profile</strong>
+                <a href="https://github.com/richamtech"
+                   target="_blank" rel="noopener noreferrer">
+                    github.com/richamtech
+                </a>
+            </div>
+        </div>
+    </section>
 
 </main>
+
+<footer class="footer">
+    <p>Richa Singh | Academic CV &amp; Portfolio</p>
+    <p>© <span id="currentYear">2026</span> Richa Singh</p>
+</footer>
 
 </body>
 </html>
