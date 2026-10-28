@@ -968,22 +968,4 @@ tbody tr:hover {
   background: #dc2626;
 }
 
-@media (max-width: 950px) {
-  .demo-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
 
-@media (max-width: 620px) {
-  .ai-demos {
-    padding: 45px 16px;
-  }
-
-  .demo-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .demo-card {
-    padding: 20px;
-  }
-}
