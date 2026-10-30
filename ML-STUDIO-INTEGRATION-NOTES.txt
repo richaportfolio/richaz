@@ -1,0 +1,12 @@
+INTEGRATION COMPLETE
+
+Changed files:
+- index.html: added the ML Studio navigation tab.
+- ml-studio.html: added the separate ML Studio project page and its own JS include.
+- assets/css/ml-studio.css: page-specific styles.
+- assets/js/ml-studio.js: accessible mobile navigation behavior for the ML Studio page.
+- README.md: updated publishing instructions.
+
+Existing style.css, script.js, profile photo and homepage content are retained.
+
+To publish: upload the contents of this folder to the root of the richaz repository, commit, and push. No GitHub commit or push has been performed from this environment.

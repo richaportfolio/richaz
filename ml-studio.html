@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ML Studio — a WEKA-inspired graphical machine learning workbench built with Python, Jupyter and scikit-learn.">
+  <title>ML Studio | Richa Singh Portfolio</title>
+  <link rel="stylesheet" href="assets/css/ml-studio.css">
+</head>
+<body>
+<header id="top">
+  <div class="wrap">
+    <nav class="studio-nav">
+      <a class="brand" href="index.html" aria-label="Return to Richa Singh portfolio">Richa Singh</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="studio-links">☰ <span class="sr-only">Toggle navigation</span></button>
+      <div class="navlinks" id="studio-links">
+        <a href="index.html">Portfolio Home</a>
+        <a href="#overview">Overview</a><a href="#features">Features</a>
+        <a href="#workflow">Workflow</a><a href="#technology">Technology</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Machine Learning · Data Mining · Visual Analytics</div>
+        <h1>A graphical workspace for machine learning.</h1>
+        <p>
+          ML Studio is a WEKA-inspired, Python-based machine learning workbench.
+          It brings dataset exploration, preprocessing, model training, evaluation,
+          algorithm comparison and prediction into one interactive Jupyter interface.
+        </p>
+        <div class="actions">
+          <a class="btn btn-light" href="#features">Explore capabilities</a>
+          <a class="btn btn-outline" href="#workflow">View workflow</a>
+        </div>
+      </div>
+      <div class="mock" aria-label="Illustrative ML Studio dashboard preview">
+        <div class="mock-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        <div class="mock-title">ML STUDIO / MODEL OVERVIEW</div>
+        <div class="metric-grid">
+          <div class="metric"><small>Workspace</small><strong>Data</strong></div>
+          <div class="metric"><small>Learning</small><strong>ML</strong></div>
+          <div class="metric"><small>Evaluation</small><strong>F1</strong></div>
+          <div class="metric"><small>Insights</small><strong>AI</strong></div>
+        </div>
+        <div class="chart">
+          <span class="bar" style="height:35%"></span><span class="bar" style="height:58%"></span>
+          <span class="bar" style="height:46%"></span><span class="bar" style="height:82%"></span>
+          <span class="bar" style="height:68%"></span><span class="bar" style="height:95%"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="overview">
+    <div class="section-head">
+      <div class="kicker">Project overview</div>
+      <h2>From raw data to evaluated models—through a GUI.</h2>
+      <p class="lead">
+        The project is designed to make common machine learning workflows easier to learn,
+        demonstrate and reproduce. Users can work with their own tabular datasets or explore
+        built-in datasets, then select an algorithm and inspect its results.
+      </p>
+    </div>
+    <div class="split">
+      <div class="panel">
+        <h3>Project objective</h3>
+        <p class="lead">To provide an accessible learning and experimentation environment that reduces repetitive coding in introductory ML workflows while keeping the underlying Python tools visible and extensible.</p>
+      </div>
+      <div class="panel">
+        <h3>Who can use it?</h3>
+        <ul class="clean">
+          <li>B.Tech and postgraduate students learning machine learning</li>
+          <li>Educators demonstrating algorithms and evaluation metrics</li>
+          <li>Researchers exploring baseline models on structured datasets</li>
+          <li>Python learners practising the end-to-end ML pipeline</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="section-head">
+      <div class="kicker">Core capabilities</div>
+      <h2>One interface, multiple ML tasks.</h2>
+      <p class="lead">The notebook groups the main stages of a typical machine learning experiment into clear GUI sections.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><div class="icon">📂</div><h3>Dataset loading</h3><p>Import CSV and Excel files or start with sample datasets such as Iris, Wine, Breast Cancer and Diabetes.</p></article>
+      <article class="card"><div class="icon">🔎</div><h3>Data exploration</h3><p>Inspect dataset dimensions, column types, missing values, duplicates and descriptive statistics.</p></article>
+      <article class="card"><div class="icon">🧹</div><h3>Preprocessing</h3><p>Clean duplicate or incomplete rows, impute missing feature values, encode categories and scale numeric features.</p></article>
+      <article class="card"><div class="icon">🧠</div><h3>Classification & regression</h3><p>Train a selection of supervised learning algorithms for categorical and numeric prediction tasks.</p></article>
+      <article class="card"><div class="icon">🧩</div><h3>Clustering</h3><p>Explore unsupervised grouping with K-Means, DBSCAN and Agglomerative Clustering, with a PCA projection.</p></article>
+      <article class="card"><div class="icon">📊</div><h3>Evaluation & comparison</h3><p>Review metrics, confusion matrices, classification reports, actual-versus-predicted plots and baseline comparisons.</p></article>
+      <article class="card"><div class="icon">🎯</div><h3>Feature insights</h3><p>Use permutation importance to estimate how much individual input columns contribute to model performance.</p></article>
+      <article class="card"><div class="icon">🔮</div><h3>New predictions</h3><p>Enter a new observation as JSON and use the fitted pipeline to generate a prediction.</p></article>
+      <article class="card"><div class="icon">💾</div><h3>Model & result export</h3><p>Save the trained pipeline as a Joblib file and export held-out test predictions to CSV.</p></article>
+    </div>
+  </section>
+
+  <section id="workflow">
+    <div class="section-head">
+      <div class="kicker">How it works</div>
+      <h2>A guided machine learning workflow.</h2>
+      <p class="lead">The user moves through the stages below using the notebook's interactive tabs.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Load data</h3><p>Upload a CSV/Excel dataset or select a sample dataset.</p></div>
+      <div class="step"><h3>Explore & prepare</h3><p>Review data quality, select a target and configure preprocessing.</p></div>
+      <div class="step"><h3>Train & compare</h3><p>Choose a task and algorithm, then fit and compare models.</p></div>
+      <div class="step"><h3>Evaluate & export</h3><p>Inspect metrics and visualizations, make predictions and save outputs.</p></div>
+    </div>
+  </section>
+
+  <section id="technology">
+    <div class="section-head">
+      <div class="kicker">Technology stack</div>
+      <h2>Built with the Python data science ecosystem.</h2>
+      <p class="lead">The interface is delivered in a Jupyter Notebook and uses widely adopted open-source libraries.</p>
+    </div>
+    <div class="tags">
+      <span class="tag">Python</span><span class="tag">Jupyter Notebook</span>
+      <span class="tag">ipywidgets</span><span class="tag">Pandas</span>
+      <span class="tag">NumPy</span><span class="tag">Scikit-learn</span>
+      <span class="tag">Matplotlib</span><span class="tag">Seaborn</span>
+      <span class="tag">Joblib</span>
+    </div>
+  </section>
+
+  <section id="learning">
+    <div class="section-head">
+      <div class="kicker">Learning outcomes</div>
+      <h2>What this project demonstrates.</h2>
+    </div>
+    <div class="split">
+      <div class="panel">
+        <h3>Machine learning concepts</h3>
+        <ul class="clean">
+          <li>Supervised vs. unsupervised learning</li>
+          <li>Train/test splitting and preprocessing pipelines</li>
+          <li>Classification and regression evaluation</li>
+          <li>Clustering and dimensionality reduction</li>
+          <li>Model comparison and feature importance</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Software development concepts</h3>
+        <ul class="clean">
+          <li>Modular Python class design</li>
+          <li>Interactive widgets and event callbacks</li>
+          <li>Data import and export</li>
+          <li>Reusable model pipelines</li>
+          <li>Experiment-oriented user interface design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="run">
+    <div class="section-head">
+      <div class="kicker">Run the project</div>
+      <h2>Getting started.</h2>
+      <p class="lead">Open the notebook in Jupyter Notebook, JupyterLab or Google Colab. Run the setup cell, then execute the notebook cells in order to display the interface.</p>
+    </div>
+    <div class="code"># Install dependencies<br>
+%pip install pandas numpy matplotlib seaborn scikit-learn ipywidgets joblib openpyxl<br><br>
+# Then run the notebook cells from top to bottom</div>
+    <p class="lead" style="margin-top:14px">The GUI relies on notebook widget support. If widgets do not appear, check that ipywidgets is installed and enabled in your notebook environment.</p>
+  </section>
+
+  <section id="future">
+    <div class="section-head">
+      <div class="kicker">Future enhancements</div>
+      <h2>Potential next steps.</h2>
+      <p class="lead">The current notebook is an educational prototype. The following features could expand it into a more complete research workbench.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><h3>AutoML & tuning</h3><p>Automated model selection, cross-validation and hyperparameter optimization.</p></article>
+      <article class="card"><h3>Explainable AI</h3><p>SHAP explanations and local explanations for individual predictions.</p></article>
+      <article class="card"><h3>Advanced analytics</h3><p>Feature selection, association rules, anomaly detection and imbalance handling.</p></article>
+      <article class="card"><h3>Deep learning</h3><p>Neural network workflows using TensorFlow or PyTorch.</p></article>
+      <article class="card"><h3>Experiment tracking</h3><p>Save experiment configurations, metrics, timestamps and model versions.</p></article>
+      <article class="card"><h3>Web application</h3><p>Move from notebook widgets to a standalone Streamlit or Flask interface.</p></article>
+    </div>
+  </section>
+
+  <div class="callout">
+    <strong>Project note</strong>
+    ML Studio is inspired by the workflow of WEKA, but it is an independently developed educational prototype—not an official WEKA product or a complete replacement. Model scores depend on the dataset, target selection, preprocessing and validation strategy.
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong>ML Studio</strong><br><small>Interactive Machine Learning Workbench</small></div>
+    <small>Portfolio project · Python · Machine Learning</small>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+<script src="assets/js/ml-studio.js" defer></script>
+</body>
+</html>
