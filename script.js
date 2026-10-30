@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // 1. House Price Prediction
-  $("houseDemo").addEventListener("submit", event => {
+  $("houseDemo")?.addEventListener("submit", event => {
     event.preventDefault();
 
     try {
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // 2. Student Performance
-  $("studentDemo").addEventListener("submit", event => {
+  $("studentDemo")?.addEventListener("submit", event => {
     event.preventDefault();
 
     try {
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // 3. Explainable AI: illustrative contributions, NOT SHAP.
-  $("explainDemo").addEventListener("submit", event => {
+  $("explainDemo")?.addEventListener("submit", event => {
     event.preventDefault();
 
     try {
